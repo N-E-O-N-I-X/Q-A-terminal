@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q&A terminal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+  <audio id="background-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    Ваш браузер не поддерживает аудио.
+</audio>
+  <div class="title lilita-one-regular">
+    <span>Q</span><span>&</span><span>A</span><span>t</span><span>e</span><span>r</span><span>m</span><span>i</span><span>n</span><span>a</span><span>l</span>
+  </div>
+  <div class="commands">
+    <span>Available commands:</span>
+    <br>
+    <br>hello
+    <br>what's your name
+    <br>how are you
+    <br>bye
+    <br>to the moon
+    <br>do you know anything about AI
+    <br>what's the weather
+    <br>who are you
+    <br>what are you thinking about
+    <br>you are cool
+    <br>what is your purpose
+    <br>tell me a joke
+    <br>what is life
+    <br>do you have emotions
+    <br>are you human
+    <br>what's the meaning of life
+    <br>are you smarter than me
+    <br>do you have friends
+    <br>can you dance
+    <br>what's your favorite color
+    <br>do you sleep
+    <br>can you cook
+    <br>do you dream
+    <br>can you feel pain
+    <br>what do you think of humans
+    <br>do you lie
+    <br>are you dangerous
+    <br>what do you eat
+    <br>what's your age
+    <br>can you help me
+    <br>do you love
+  </div>
+  <div class="matrix"><img src="matrix.gif"><div id="matrix"></div></div>
+  <div id="chat-container">
+    <input type="text" id="user-input" placeholder="Ask a question..." />
+    <button id="submit-button">Send</button>
+  </div>
+
+  <canvas id="waveform"></canvas>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

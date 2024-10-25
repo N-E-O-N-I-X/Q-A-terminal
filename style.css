@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+  flex-direction: column;
+  z-index: 0;
+}
+
+#chat-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+#user-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+#submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  transform: scale(1.1);
+  box-shadow: #111;
+  transition: 0.15s;
+}
+
+canvas {
+  position: absolute;
+  bottom: 100px;
+  width: 80%;
+  height: 50px;
+  z-index: 995;
+}
+
+
+
+.commands {
+  padding: 5px 7px;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #b4b1b1;
+  border: #242424 5px solid;
+  border-radius: 7px;
+  position: absolute;
+  z-index: 998;
+  width: 280px;
+  height: 650px;
+  left: 200px;
+}
+
+.commands:hover {
+  height: 660px;
+  transform: scale(1.04);
+  cursor: url('cursor.cur') 10 10, pointer;	
+  transition: 0.2s;
+}
+
+.commands span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.lilita-one-regular {
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  position: absolute;
+  z-index: 999;
+  color: #ffffff;
+  font-size: 90px;
+  text-shadow: #242424 7px 5px;
+  top: 50px;
+}
+
+.title span:hover {
+  font-size: 100px;
+  text-shadow: #242424 9px 6px;
+  transition: 0.2s;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #user-input {
+    width: 200px;
+  }
+  #submit-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .commands {
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 80px;
+    overflow-y: auto;
+  }
+  .title {
+    font-size: 60px;
+  }
+}
+
+#waveform {
+  position: absolute;
+  z-index: 997;
+}
+
+.matrix {
+  position: absolute;
+  right: 90px;
+}
+
+.matrix img {
+  position: relative;
+  filter: grayscale(1);
+  z-index: 998;
+}
+
+.matrix div {
+  position: absolute;
+  background-color: black;
+  width: 338px;
+  height: 600px;
+  z-index: 999;
+  margin-top: -604px;
+}
+
