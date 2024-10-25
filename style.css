@@ -148,3 +148,29 @@ canvas {
   margin-top: -604px;
 }
 
+.links {
+  left: 170px;
+  bottom: 20px;
+  position: absolute;
+  z-index: 999;
+}
+
+.x, .pump {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-left: 50px;
+  padding: 7px 15px;
+  border: white 3px solid;
+  color: white;
+  background-color: #111;
+  border-radius: 30px;
+}
+.x:hover, .pump:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #111;
+  background-color: #b4b1b1;
+  border-color: #111;
+  transition: 0.3s;
+}
