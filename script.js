@@ -182,11 +182,8 @@ const showDuration = 300; // Время появления (можно испо�
 
 toggleMatrix(hideDuration, showDuration);
 
-const playMusicButton = document.getElementById('playMusic');
+// Получаем аудио элемент
 const backgroundMusic = document.getElementById('background-music');
 
-playMusicButton.addEventListener('click', () => {
-    backgroundMusic.play();
-});
-
-backgroundMusic.volume = 0.02; // Установка громкости (от 0.0 до 1.0)
+// Устанавливаем громкость на 50%
+backgroundMusic.volume = 0.05;
