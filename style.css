@@ -175,3 +175,18 @@ canvas {
   transition: 0.3s;
 }
 
+#playMusic {
+  position: absolute;
+  z-index: 999;
+  top: 180px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#playMusic:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
