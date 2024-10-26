@@ -182,6 +182,8 @@ const showDuration = 300; // Время появления (можно испо�
 
 toggleMatrix(hideDuration, showDuration);
 
+
+
 const playMusicButton = document.getElementById('playMusic');
     const backgroundMusic = document.getElementById('background-music');
 
